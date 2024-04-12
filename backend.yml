@@ -13,7 +13,7 @@ spec:
         app: back-end
     spec:
       containers:
-        - image: blackopsham/backend:v1
+        - image: efrei/back-end:1
           imagePullPolicy: IfNotPresent
           name: back-end
       restartPolicy: Always
