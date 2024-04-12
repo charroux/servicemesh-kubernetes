@@ -13,7 +13,7 @@ spec:
         app: back-end
     spec:
       containers:
-        - image: efrei/back-end:1
+        - image: charroux/backend:1
           imagePullPolicy: IfNotPresent
           name: back-end
       restartPolicy: Always
@@ -29,7 +29,7 @@ spec:
     - nodePort: 31280
       port: 80          # le port du service
       protocol: TCP
-      targetPort: 8080   # lee port du code (java dans ce cas la)
+      targetPort: 8080   # le port du code (java dans ce cas la)
   selector:
     app: back-end
   type: NodePort
